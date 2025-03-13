@@ -6,6 +6,7 @@ import json
 
 with open('Lojas.json', 'rb') as f:
     USERS = json.load(f)
+    USERS = USERS.pop("Lojas")
 
 
 if "logged_in" not in st.session_state:
@@ -29,9 +30,12 @@ else:
     
     with open ('Lojas.json', 'rb') as f:
         lojas = json.load(f)
+        lojas = lojas.pop("Lojas")
     
     with open ('produtos.json', 'rb') as f:
-        produtos = json.load(f)
+        produtos = json.load(f.Produtos)
+        produtos = produtos.pop("Produtos")
+
 
     
     st.title("Saídas a granel")
