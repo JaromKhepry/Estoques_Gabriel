@@ -32,7 +32,7 @@ else:
         lojas = json.load(f)
         lojas = lojas.pop("Lojas")
     
-    with open ('produtos.json', 'rb') as f:
+    with open ('Lojas.json', 'rb') as f:
         produtos = json.load(f.Produtos)
         produtos = produtos.pop("Produtos")
 
