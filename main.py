@@ -87,7 +87,7 @@ else:
     
     if not st.session_state.registros.empty:
         output = BytesIO()
-        st.session_state.registros.to_excel(output, index=False, sheet_name='Resultados Lojas')
+       # st.session_state.registros.to_excel(output, index=False, sheet_name='Resultados Lojas')
         output.seek(0)
         st.download_button(
             label="Baixar Registros em excel",
